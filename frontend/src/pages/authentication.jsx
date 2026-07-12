@@ -81,7 +81,7 @@ export default function Authentication() {
                             >
                                 <LockOutlinedIcon />
                             </div>
-                            <h4 className='fw-bold'>Smile Video Call</h4>
+                            <h4 className='fw-bold'> Connectly </h4>
                             <p className="text-muted small">Connect instantly with anyone</p>
                         </div>
 

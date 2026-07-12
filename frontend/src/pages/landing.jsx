@@ -43,14 +43,25 @@ export default function LandingPage() {
                     <div className="col-md-6">
 
                         <h1 className="fw-bold">
-                            <span style={{ color: "#FF9839" }}>Connect</span> with your loved Ones
+                            <span style={{ color: "#3978ff" }}>Connect</span> with your loved Ones
                         </h1>
 
                         <p className="text-muted mt-3">
                             Cover a distance by Connectly
                         </p>
 
-                        <Link to="/auth" className="btn btn-warning mt-3">
+                        <Link
+                            to="/auth"
+                            className="btn mt-3"
+                            style={{
+                                backgroundColor: "#3978ff",
+                                color: "white",
+                                border: "none",
+                                padding: "10px 22px",
+                                borderRadius: "10px",
+                                fontWeight: "600"
+                            }}
+                        >
                             Get Started
                         </Link>
 

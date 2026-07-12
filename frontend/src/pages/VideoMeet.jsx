@@ -26,10 +26,10 @@ const peerConfigConnections = {
 
 export default function VideoMeet() {
 
-    let socketRef = useRef();
-    let socketIdRef = useRef();
-    let localVideoref = useRef();
-    const videoRef = useRef([])
+    let socketRef = useRef(); // user socket 
+    let socketIdRef = useRef(); // socket ids
+    let localVideoref = useRef(); // local video 
+    const videoRef = useRef([]); // remote 
 
     let [videoAvailable, setVideoAvailable] = useState(true);
     let [audioAvailable, setAudioAvailable] = useState(true);
@@ -49,7 +49,7 @@ export default function VideoMeet() {
 
 
     useEffect(() => {
-        console.log("HELLO")
+        console.log("HELLO");
         getPermissions();
     },[]);
 
@@ -120,9 +120,6 @@ export default function VideoMeet() {
 
     }
 
-
-
-
     let getUserMediaSuccess = (stream) => {
         try {
             window.localStream.getTracks().forEach(track => track.stop())
@@ -186,10 +183,6 @@ export default function VideoMeet() {
             } catch (e) { }
         }
     }
-
-
-
-
 
     let getDislayMediaSuccess = (stream) => {
         console.log("HERE")
